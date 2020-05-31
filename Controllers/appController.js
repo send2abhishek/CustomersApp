@@ -89,6 +89,7 @@ const login = async (req, res, next) => {
               city: getExistingUser[0].city,
               country: getExistingUser[0].country,
               phone: getExistingUser[0].phone,
+              loginTime: updateTime.lastLogin,
               token: Token,
             });
           }
@@ -104,7 +105,6 @@ const login = async (req, res, next) => {
   }
 };
 const updateLoginTime = async (userId) => {
-  console.log("login time");
   try {
     const updateDocument = await userSchema.findByIdAndUpdate(
       userId,
@@ -153,6 +153,7 @@ const uploadFile = async (req, res, next) => {
     if (updateDocument != null || updateDocument != undefined) {
       return res.status(201).json({
         msg: config.get("fileUpload"),
+        user: updateDocument,
         userId: req.body.userId,
         fileName: req.file.originalname,
         path: `${req.headers.host}/uploads/${req.file.originalname}`,

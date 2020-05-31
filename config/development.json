@@ -2,6 +2,7 @@
   "name": "Xcelpros Technologies Pvt Ltd",
   "dburl": "mongodb+srv://send2abhishek:aryan@cluster0-orw7v.mongodb.net/customers",
   "dbconnectMsg": "Db connected",
+  "App": "Application is listining at port ",
   "dbConnectError": "error in connecting db",
   "userExits": "User Already Exists",
   "userNotFound": "User doesn't exists in our database",
