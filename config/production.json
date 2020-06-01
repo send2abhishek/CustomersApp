@@ -2,6 +2,7 @@
   "name": "Xcelpros Technologies Pvt Ltd",
   "dburl": "mongodb+srv://send2abhishek:aryan@cluster0-orw7v.mongodb.net/customers",
   "dbconnectMsg": "Db connected",
+  "App": "Application is listining at port ",
   "dbConnectError": "error in connecting db",
   "userExits": "User Already Exists",
   "userNotFound": "User doesn't exists in our database",
@@ -10,6 +11,6 @@
   "InvalidPassword": "Invalid username or password",
   "InvalidAuth": "Invalid username or password try register option first",
   "InvalidToken": "Invalid token or you are missing header token",
-  "NotesSave": "Notes has been saved to database",
+  "fileUpload": "File Uploaded",
   "error": "Something Went Wrong"
 }
